@@ -59,7 +59,6 @@ app.get("/posts/:topic",function(req,res){
         if(_.lowerCase(doc.title)===topic){
             res.render("post",{title:doc.title,content:doc.post});
         }
-              console.log(doc.post);
       });
     }
   });
